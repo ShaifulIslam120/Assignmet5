@@ -133,6 +133,6 @@ btn1.addEventListener('click',function(){
         'bg-white',
              'opacity-[.7]')
              document.getElementById('Donate-form').classList.remove("hidden")
-document.getElementById('Histoty-list').classList.add('hidden')
+        document.getElementById('Histoty-list').classList.add('hidden')
            
 } )
