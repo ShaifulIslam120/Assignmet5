@@ -30,15 +30,15 @@ const TotalDonationForNoakhali= DonationForNoakhali+AmountOfDonation1
 document.getElementById('Donation-For-Noakhali').innerText=TotalDonationForNoakhali;
 document.getElementById('My-balance').innerText=newblance
  
-const history=document.createElement("div")
-history.className = 'bg-white p-3 rounded-md border-l-2 border-indigo-500';
+const historyitem=document.createElement('div');
+historyitem.innerHTML= `
+<p class='text-xl font-semibold text-start'> ${AmountOfDonation1}Taka is Donated for famine-2024 at Noakhali, Bangladesh</p>
+<p class='text-base font-semibold text-start'>${new Date().toLocaleString('en-US', {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short'}) + ` (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}</p>
+<div class="divider"></div>
 
-    history.innerHTML=  `   
-
-            <p>ami  ami  to tmi</p>
-`;
-const historycontainer=document.getElementById('History')
-historycontainer.insertBefore(history,historycontainer.firstChild)
+`
+const historyconatiner=document.getElementById('Histoty-list')
+historyconatiner.insertBefore(historyitem,historyconatiner.firstChild)
 })
 
 document.getElementById('Button-2').addEventListener('click',function(event){
@@ -55,7 +55,14 @@ document.getElementById('Button-2').addEventListener('click',function(event){
     const TotalDonationForFeni= DonationForfeni+AmountOfDonation2
     document.getElementById('Donation-For-Feni').innerText=TotalDonationForFeni;
     document.getElementById('My-balance').innerText=newblance2
-    // console.log(MyBalance2,AmountOfDonation2,DonationForfeni)
+    const historyitem=document.createElement('div');
+historyitem.innerHTML= `
+<p class='text-xl font-semibold text-start'> ${AmountOfDonation2}Taka is Donated for famine-2024 at Feni, Bangladesh</p>
+<p class='text-base font-semibold text-start'>${new Date().toLocaleString('en-US', {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short'}) + ` (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}</p>
+<div class="divider"></div>
+`
+const historyconatiner=document.getElementById('Histoty-list')
+historyconatiner.insertBefore(historyitem,historyconatiner.firstChild)
 })
 
 document.getElementById('Button-3').addEventListener('click',function(event){
@@ -72,6 +79,14 @@ document.getElementById('Button-3').addEventListener('click',function(event){
     const TotalDonationForstd=DonationForStd+AmountOfDonation3
     document.getElementById('Donation-For-Std').innerText= TotalDonationForstd;
     document.getElementById('My-balance').innerText=newblance3
+    const historyitem=document.createElement('div');
+historyitem.innerHTML= `
+<p class='text-xl font-semibold text-start'> ${AmountOfDonation3}Taka is Donated for Student-Movement-2024, Bangladesh</p>
+<p class='text-base font-semibold text-start'>${new Date().toLocaleString('en-US', {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short'}) + ` (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}</p>
+<div class="divider"></div>
+`
+const historyconatiner=document.getElementById('Histoty-list')
+historyconatiner.insertBefore(historyitem,historyconatiner.firstChild)
     
     
     
@@ -98,4 +113,26 @@ btn1.classList.add(
          'opacity-[.7]')
    
 document.getElementById('Donate-form').classList.add("hidden")
+document.getElementById('Histoty-list').classList.remove('hidden')
+
 })
+btn1.addEventListener('click',function(){
+    btn1.classList.remove(
+        'bg-white',
+         'opacity-[.7]',
+
+    )
+    btn1.classList.add(
+        'bg-[#B4F461]',
+        'font-semibold'
+    )
+    btn2.classList.remove( 
+        'bg-[#B4F461]',
+        'font-semibold')
+    btn2.classList.add( 
+        'bg-white',
+             'opacity-[.7]')
+             document.getElementById('Donate-form').classList.remove("hidden")
+document.getElementById('Histoty-list').classList.add('hidden')
+           
+} )
