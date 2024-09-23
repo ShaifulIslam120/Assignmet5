@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,11 +15,11 @@
 </head>
 <body class="lexend">
 
-<header>
+<header class="">
      <!-- nav start here -->
-     <nav class="bg-[#F9F7F3] flex justify-between items-center">
-        <div class=" pt-6 pb-6 px-32">
-            <button class="btn font-semibold bg-[#B4F461] h-12 w-28 text-xl">Blog</button>
+     <nav class="bg-[#F9F7F3] flex justify-between items-center  lg:w-full w-[1150px]">
+        <div class=" pt-6 pb-6 lg:px-32 ">
+          <a href="./blog.html">  <button class="btn font-semibold bg-[#B4F461] h-12 w-28 text-xl" id="btn-3">Blog</button></a>
         </div>
         <div class="flex justify-between items-center gap-4">
             <img src="./assets/logo.png" alt="">
@@ -32,18 +32,19 @@
     </nav>
     <!-- nav end here -->
      <!-- butto  section start here  -->
-
-    <div class="flex justify-center items-center pt-36 gap-5">
-        <button class=" bg-[#B4F461] w-[155px] h-[50px] text-xl rounded-xl font-semibold">Donation</button>
-        <button class=" bg-white text-text-[#111111] opacity-[.7]  text-xl w-[155px] h-[55px] border rounded-xl border-slate-300 font-medium">Default</button>
-        <!-- button end here -->
+ 
+     <div class="lg:flex justify-center items-center pt-36 gap-5 ">
+        <button class=" bg-[#B4F461] w-[155px] h-[50px] text-xl  border border-slate-300 rounded-xl font-semibold" id="Btn-1">Donation</button>
+        <button id="Btn-2" class=" bg-white text-text-[#111111] opacity-[.7]  text-xl w-[155px] h-[55px] border rounded-xl border-slate-300 font-medium" >History</button>
+       
+         </div>
 </header>
 
-<main class="mt-6 grid grid-cols-1 justify-items-center">
+<main class="mt-6 grid grid-cols-1 justify-items-center border">
     <!-- first card start -->
-     <div class="border rounded-xl border-slate-300 w-[1110px]">
+     <div class="border rounded-xl border-slate-300 w-[1110px] flex-row items-center mx-auto">
         <div class="flex justify-center items-center">
-            <div class="hero-content flex-col lg:flex-row items-center justify-center">
+            <div class="hero-content  flex-row items-center justify-center">
               <img src="./assets/noakhali.png" alt="">
               <div class="pt-5">
                     <div class=" border rounded-xl border-slate-300 w-[150px] h-[40px] flex justify-center items-center gap-3 px-1 py-2 pb-2">
@@ -79,9 +80,9 @@
      </div>
      <!-- first card end here -->
     <!-- second  card start -->
-     <div class="border rounded-xl border-slate-300 w-[1110px] mt-5">
+     <div class="border rounded-xl border-slate-300 w-[1110px] mt-5 mx-auto">
         <div class="flex justify-center items-center">
-            <div class="hero-content flex-col lg:flex-row items-center justify-center">
+            <div class="hero-content flex-row items-center justify-center">
               <img src="./assets/feni.png" alt="">
               <div class="pt-5">
                     <div class=" border rounded-xl border-slate-300 w-[150px] h-[40px] flex justify-center items-center gap-3 px-1 py-2 pb-2">
@@ -116,9 +117,9 @@
      <!-- second card end here -->
 
     <!-- third card start -->
-     <div class="border rounded-xl border-slate-300 w-[1110px] mt-5">
+     <div class="border rounded-xl border-slate-300 w-[1110px] mt-5 mx-auto ">
         <div class="flex justify-center items-center">
-            <div class="hero-content flex-col lg:flex-row items-center justify-center">
+            <div class="hero-content flex-row items-center justify-center">
               <img src="./assets/quota-protest.png" alt="">
               <div class="pt-5">
                     <div class=" border rounded-xl border-slate-300 w-[150px] h-[40px] flex justify-center items-center gap-3 px-1 py-2 pb-2">
@@ -153,8 +154,8 @@
      <!-- third card end here -->
 
      <!-- History start  here -->
-      <div>
-        <textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>
+      <div id="Histoty" class="grid grid-cols-2 gap-3">
+        
       </div>
 </main>
 

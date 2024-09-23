@@ -30,7 +30,15 @@ const TotalDonationForNoakhali= DonationForNoakhali+AmountOfDonation1
 document.getElementById('Donation-For-Noakhali').innerText=TotalDonationForNoakhali;
 document.getElementById('My-balance').innerText=newblance
  
+const history=document.createElement("div")
+history.className = 'bg-white p-3 rounded-md border-l-2 border-indigo-500';
 
+    history.innerHTML=  `   
+
+            <p>ami  ami  to tmi</p>
+`;
+const historycontainer=document.getElementById('History')
+historycontainer.insertBefore(history,historycontainer.firstChild)
 })
 
 document.getElementById('Button-2').addEventListener('click',function(event){
@@ -66,6 +74,7 @@ document.getElementById('Button-3').addEventListener('click',function(event){
     document.getElementById('My-balance').innerText=newblance3
     
     
-    // console.log(MyBalance3,AmountOfDonation3,DonationForStd,newblance3,TotalDonationForstd)
+    
 })
+
 
