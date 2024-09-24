@@ -19,7 +19,7 @@ event.preventDefault();
   const MyBalance1=getvaluedbyId1('My-balance')
 const AmountOfDonation1= getvaluedbyId2('AmountOfDonation1')
 const DonationForNoakhali =getvaluedbyId1('Donation-For-Noakhali')
-if(AmountOfDonation1<=0 || AmountOfDonation1>MyBalance1 || isNaN('AmountOfDonation1')){
+if(AmountOfDonation1<=0 || AmountOfDonation1>MyBalance1 || isNaN(AmountOfDonation1)){
     document.getElementById('Error-amont1').classList.remove("hidden");
     document.getElementById('my_modal_1').classList.add("hidden")
     return;
@@ -46,7 +46,7 @@ document.getElementById('Button-2').addEventListener('click',function(event){
     const MyBalance2=getvaluedbyId1('My-balance')
     const AmountOfDonation2 =getvaluedbyId2('AmountOfDonation2')
     const DonationForfeni=getvaluedbyId1('Donation-For-Feni')
-    if(AmountOfDonation2<=0 || AmountOfDonation2>MyBalance2 || isNaN('AmountOfDonation2')){
+    if(AmountOfDonation2<=0 || AmountOfDonation2>MyBalance2 || isNaN(AmountOfDonation2)){
         document.getElementById('Error-amont2').classList.remove("hidden");
         document.getElementById('my_modal_5').classList.add("hidden")
         return;
@@ -70,7 +70,7 @@ document.getElementById('Button-3').addEventListener('click',function(event){
     const MyBalance3=getvaluedbyId1('My-balance')
     const AmountOfDonation3 =getvaluedbyId2('AmountOfDonation3')
     const DonationForStd=getvaluedbyId1('Donation-For-Std')
-    if(AmountOfDonation3<=0 || AmountOfDonation3>MyBalance3 || isNaN('AmountOfDonation3')){
+    if(AmountOfDonation3<=0 || AmountOfDonation3>MyBalance3 || isNaN(AmountOfDonation3)){
         document.getElementById('Error-amont3').classList.remove("hidden");
         document.getElementById('my_modal_2').classList.add("hidden")
         return;
