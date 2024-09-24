@@ -11,14 +11,26 @@
   font-family: "Lexend", sans-serif;
   
 }
-
+.navbar {
+            background-color: #F9F7F3;
+            transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+        }
+        .navbar-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            background-color: rgba(249, 247, 243, 0.8); 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
     </style> 
 </head>
 <body class="lexend">
 
 <header class="">
      <!-- nav start here -->
-     <nav id="navbar" class="">
+     <nav id="navbar" class="navbar navbar-sticky">
         <div class="navbar bg-[#F9F7F3] flex  lg:justify-between gap-8 items-center">
             <a href="./blog.html">  <button class="btn font-semibold bg-[#B4F461] h-12 w-28 text-xl" id="btn-3">Blog</button></a>
             <div class="flex justify-between items-center lg:gap-4 gap-7 pb-3">
