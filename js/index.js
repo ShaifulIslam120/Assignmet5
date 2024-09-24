@@ -136,3 +136,15 @@ btn1.addEventListener('click',function(){
         document.getElementById('Histoty-list').classList.add('hidden')
            
 } )
+window.onscroll = function() {stickyNavbar()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function stickyNavbar() {
+        if (window.pageYOffset > sticky) {
+            navbar.classList.add("navbar-sticky");
+        } else {
+            navbar.classList.remove("navbar-sticky");
+        }
+    }
