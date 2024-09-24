@@ -81,7 +81,7 @@ document.getElementById('Button-3').addEventListener('click',function(event){
     document.getElementById('My-balance').innerText=newblance3
     const historyitem=document.createElement('div');
 historyitem.innerHTML= `
-<p class='text-xl font-semibold text-start'> ${AmountOfDonation3}Taka is Donated for Student-Movement-2024, Bangladesh</p>
+<p class='text-xl font-semibold text-start '> ${AmountOfDonation3}Taka is Donated for Student-Movement-2024, Bangladesh</p>
 <p class='text-base font-semibold text-start'>${new Date().toLocaleString('en-US', {weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZoneName: 'short'}) + ` (${Intl.DateTimeFormat().resolvedOptions().timeZone})`}</p>
 <div class="divider"></div>
 `
@@ -136,15 +136,15 @@ btn1.addEventListener('click',function(){
         document.getElementById('Histoty-list').classList.add('hidden')
            
 } )
-window.onscroll = function() {stickyNavbar()};
+// window.onscroll = function() {stickyNavbar()};
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+//     var navbar = document.getElementById("navbar",'bnt-stick');
+//     var sticky = navbar.offsetTop;
 
-    function stickyNavbar() {
-        if (window.pageYOffset > sticky) {
-            navbar.classList.add("navbar-sticky");
-        } else {
-            navbar.classList.remove("navbar-sticky");
-        }
-    }
+//     function stickyNavbar() {
+//         if (window.pageYOffset > sticky) {
+//             navbar.classList.add("navbar-sticky");
+//         } else {
+//             navbar.classList.remove("navbar-sticky");
+//         }
+//     }

@@ -12,7 +12,7 @@
   
 }
 .navbar {
-            background-color: #F9F7F3;
+            background-color: #F9F7F3 ;
             transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
         }
         .navbar-sticky {
@@ -30,31 +30,34 @@
 
 <header class="">
      <!-- nav start here -->
-     <nav id="navbar" class="navbar navbar-sticky">
-        <div class="navbar bg-[#F9F7F3] flex  lg:justify-between gap-8 items-center">
-            <a href="./blog.html">  <button class="btn font-semibold bg-[#B4F461] h-12 w-28 text-xl" id="btn-3">Blog</button></a>
-            <div class="flex justify-between items-center lg:gap-4 gap-7 pb-3">
-                <img src="./assets/logo.png" alt="">
-                <h1 class="pt-4 text-xl font-semibold">Donate Bangladesh</h1>
-            </div>
-            <div class="flex lg:justify-center items-center px-10">
-                <img src="./assets/coin.png" alt="">
-                <h1 class="text-[#111111] opacity-[.7] text-xl" id='My-balance'>5500 BDT</h1>
-            </div>
-          </div>
-    </nav>
+    <section class="fixed top-0 w-full z-50 bg-white  shadow-md">
+        <nav id="navbar" class="">
+            <div class="navbar bg-[#F9F7F3] flex  lg:justify-between gap-8 items-center">
+                <a href="./blog.html">  <button class="btn font-semibold bg-[#B4F461] h-12 w-28 text-xl" id="btn-3">Blog</button></a>
+                <div class="flex justify-between items-center lg:gap-4 gap-7 pb-3">
+                    <img src="./assets/logo.png" alt="">
+                    <h1 class="pt-4 text-xl font-semibold">Donate Bangladesh</h1>
+                </div>
+                <div class="flex lg:justify-center items-center px-10">
+                    <img src="./assets/coin.png" alt="">
+                    <h1 class="text-[#111111] opacity-[.7] text-xl" id='My-balance'>5500 BDT</h1>
+                </div>
+              </div>
+        </nav>
+        <div class="flex justify-center items-center pt-5 pb-4 gap-5 mx-auto px-10   " id="bnt-stick">
+            <button class=" bg-[#B4F461] w-[155px] h-[50px] text-xl  border border-slate-300 rounded-xl font-semibold" id="Btn-1">Donation</button>
+            <button id="Btn-2" class=" bg-white text-[#111111] opacity-[.7]  text-xl w-[155px] h-[55px] border rounded-xl border-slate-300 font-medium" >History</button>
+           
+             </div>
+    </section>
     <!-- nav end here -->
      <!-- butto  section start here  -->
   
-     <div class="lg:flex justify-center items-center pt-36 gap-5 mx-auto px-10">
-        <button class=" bg-[#B4F461] w-[155px] h-[50px] text-xl  border border-slate-300 rounded-xl font-semibold" id="Btn-1">Donation</button>
-        <button id="Btn-2" class=" bg-white text-[#111111] opacity-[.7]  text-xl w-[155px] h-[55px] border rounded-xl border-slate-300 font-medium" >History</button>
-       
-         </div>
+     
 </header>
 
 <main class="mt-6 grid grid-cols-1 justify-items-center lg:mx-auto ">
-    <section id="Donate-form" class="grid grid-cols-1 justify-center">
+    <section id="Donate-form" class="grid grid-cols-1 justify-center pt-48">
         
         <!-- first card start -->
         <div class="border border-slate-300 rounded-lg content-center mt-4 lg:w-[1150px] lg:mx-auto">
@@ -178,7 +181,7 @@
      <!-- History start  here -->
     </section>
     <section>
-        <div id="Histoty-list" class="grid grid-cols-1 hidden">
+        <div id="Histoty-list" class="grid grid-cols-1 hidden pt-72 border border-slate-300 rounded-lg lg:w-[1150px]  px-10">
         
         </div>
     </section>
